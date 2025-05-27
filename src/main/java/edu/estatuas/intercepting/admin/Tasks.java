@@ -20,7 +20,8 @@ public class Tasks {
     public void addTask(Filter task) { tasklist.add(task); }
 
     public void execute(String username){
-
+        getTasklist().forEach(task -> task.execute(username));
+        if (getTarget() != null) getTarget().execute(username);
     }
 
 
