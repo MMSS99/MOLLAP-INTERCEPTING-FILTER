@@ -7,11 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TaskProgrammer {
-    private Filter filter;
-    private Tasks task = null;
+    private Tasks task;
 
     public TaskProgrammer(Target target) {
-        this.filter = filter;
+        task = new Tasks();
+        task.setTarget(target);
     }
 
     public Tasks getTasks() {
@@ -19,7 +19,7 @@ public class TaskProgrammer {
     }
 
     public void setTasks(Filter filter) {
-        this.filter = filter;
+        task.addTask(filter);
     }
 
     public void executeTasks(String username) {
