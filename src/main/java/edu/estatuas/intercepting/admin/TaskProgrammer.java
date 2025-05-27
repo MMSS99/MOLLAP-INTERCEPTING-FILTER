@@ -18,11 +18,7 @@ public class TaskProgrammer {
         return task;
     }
 
-    public void setTasks(Tasks task) {
-        this.task = task;
-    }
-
-    public void setFilter(Filter filter) {
+    public void setTasks(Filter filter) {
         this.filter = filter;
     }
 
