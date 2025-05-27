@@ -4,6 +4,6 @@ public class Autorization implements Filter{
 
     @Override
     public void execute(String username){
-        System.out.println("Realizando autorización... OK");
+        System.out.println("Realizando autorización de " + username + "... OK");
     }
 }
